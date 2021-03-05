@@ -80,7 +80,7 @@ message("")
 
 include(EthCompilerSettings)
 if(UNIX AND NOT APPLE)
-    set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} -static-libstdc++ -gencode=arch=compute_50,code=sm_50 -Wno-deprecated-gpu-targets")
+    set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} -static-libstdc++  -Wno-deprecated-gpu-targets")
 endif()
 
 
