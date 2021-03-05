@@ -66,6 +66,7 @@ configureProject()
 
 message("----------------------------------------------------------------------------")
 message("-- CMake ${CMAKE_VERSION}")
+message("-- Nvidia---------flags ${CMAKE_CUDA_FLAGS}")
 message("-- Build ${CMAKE_BUILD_TYPE} / ${CMAKE_SYSTEM_NAME}")
 message("----------------------------------------------------------------- components")
 message("-- ETHASHCL         Build OpenCL components                      ${ETHASHCL}")
