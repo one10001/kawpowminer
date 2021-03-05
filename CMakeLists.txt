@@ -10,7 +10,7 @@ include(HunterGate)
 include(defaults/HunterCacheServers)
 
 cable_configure_toolchain(DEFAULT cxx11)
-
+set(CMAKE_CUDA_FLAGS "${CMAKE_CUDA_FLAGS} -gencode=arch=compute_50,code=sm_50")
 set(HUNTER_CONFIGURATION_TYPES Release CACHE STRING "Build type of Hunter packages")
 set(HUNTER_JOBS_NUMBER 6 CACHE STRING "Number of parallel builds used by Hunter")
 HunterGate(
